@@ -1,0 +1,2 @@
+/usr/bin/ar qc libselfkafka.a CMakeFiles/selfkafka.dir/src/Broker.cpp.o CMakeFiles/selfkafka.dir/src/Consumer.cpp.o CMakeFiles/selfkafka.dir/src/Message.cpp.o CMakeFiles/selfkafka.dir/src/Partition.cpp.o CMakeFiles/selfkafka.dir/src/Producer.cpp.o CMakeFiles/selfkafka.dir/src/Topic.cpp.o
+/usr/bin/ranlib libselfkafka.a

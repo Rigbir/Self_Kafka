@@ -1,0 +1,4 @@
+/Users/marat/selfKafka/build/CMakeFiles/selfkafka.dir
+/Users/marat/selfKafka/build/CMakeFiles/basic_usage.dir
+/Users/marat/selfKafka/build/CMakeFiles/edit_cache.dir
+/Users/marat/selfKafka/build/CMakeFiles/rebuild_cache.dir
