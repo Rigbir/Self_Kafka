@@ -56,7 +56,7 @@ CREATE DATABASE selfkafka;
 
 ```
 selfkafka/
-├── include/                    # Header files
+├── include/                   # Header files
 │   ├── Message.h              # Message data structure
 │   ├── Partition.h            # Thread-safe message storage
 │   ├── Topic.h                # Topic with multiple partitions
@@ -83,16 +83,16 @@ selfkafka/
 │   ├── RetentionCleaner.cpp
 │   └── ConsumerGroup.cpp
 ├── examples/                  # Demo applications
-│   ├── basic_usage.cpp       # Basic producer/consumer demo
-│   ├── async_demo.cpp        # Asynchronous processing demo
-│   ├── metrics_demo.cpp      # Metrics and logging demo
-│   └── retention_demo.cpp    # Retention policy demo
+│   ├── basic_usage.cpp        # Basic producer/consumer demo
+│   ├── async_demo.cpp         # Asynchronous processing demo
+│   ├── metrics_demo.cpp       # Metrics and logging demo
+│   └── retention_demo.cpp     # Retention policy demo
 ├── database/                  # Database schemas
-│   └── schema.sql            # PostgreSQL schema for ConsumerGroups
-├── build/                     # Build artifacts (ignored by git)
-├── CMakeLists.txt            # CMake build configuration
-├── .gitignore               # Git ignore rules
-└── README.md                # This file
+│   └── schema.sql             # PostgreSQL schema for ConsumerGroups
+├── build/                     
+├── CMakeLists.txt             
+├── .gitignore                
+└── README.md                
 ```
 
 ## Troubleshooting
