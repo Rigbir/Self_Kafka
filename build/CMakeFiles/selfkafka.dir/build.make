@@ -72,10 +72,24 @@ include CMakeFiles/selfkafka.dir/flags.make
 CMakeFiles/selfkafka.dir/codegen:
 .PHONY : CMakeFiles/selfkafka.dir/codegen
 
+CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o: CMakeFiles/selfkafka.dir/flags.make
+CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o: /Users/marat/selfKafka/src/AsyncWriter.cpp
+CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o -MF CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o.d -o CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o -c /Users/marat/selfKafka/src/AsyncWriter.cpp
+
+CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marat/selfKafka/src/AsyncWriter.cpp > CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.i
+
+CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/AsyncWriter.cpp -o CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.s
+
 CMakeFiles/selfkafka.dir/src/Broker.cpp.o: CMakeFiles/selfkafka.dir/flags.make
 CMakeFiles/selfkafka.dir/src/Broker.cpp.o: /Users/marat/selfKafka/src/Broker.cpp
 CMakeFiles/selfkafka.dir/src/Broker.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/selfkafka.dir/src/Broker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/selfkafka.dir/src/Broker.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/Broker.cpp.o -MF CMakeFiles/selfkafka.dir/src/Broker.cpp.o.d -o CMakeFiles/selfkafka.dir/src/Broker.cpp.o -c /Users/marat/selfKafka/src/Broker.cpp
 
 CMakeFiles/selfkafka.dir/src/Broker.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/selfkafka.dir/src/Broker.cpp.s: cmake_force
 CMakeFiles/selfkafka.dir/src/Consumer.cpp.o: CMakeFiles/selfkafka.dir/flags.make
 CMakeFiles/selfkafka.dir/src/Consumer.cpp.o: /Users/marat/selfKafka/src/Consumer.cpp
 CMakeFiles/selfkafka.dir/src/Consumer.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/selfkafka.dir/src/Consumer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/selfkafka.dir/src/Consumer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/Consumer.cpp.o -MF CMakeFiles/selfkafka.dir/src/Consumer.cpp.o.d -o CMakeFiles/selfkafka.dir/src/Consumer.cpp.o -c /Users/marat/selfKafka/src/Consumer.cpp
 
 CMakeFiles/selfkafka.dir/src/Consumer.cpp.i: cmake_force
@@ -100,10 +114,24 @@ CMakeFiles/selfkafka.dir/src/Consumer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/Consumer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/Consumer.cpp -o CMakeFiles/selfkafka.dir/src/Consumer.cpp.s
 
+CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o: CMakeFiles/selfkafka.dir/flags.make
+CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o: /Users/marat/selfKafka/src/ConsumerGroup.cpp
+CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o -MF CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o.d -o CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o -c /Users/marat/selfKafka/src/ConsumerGroup.cpp
+
+CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marat/selfKafka/src/ConsumerGroup.cpp > CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.i
+
+CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/ConsumerGroup.cpp -o CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.s
+
 CMakeFiles/selfkafka.dir/src/Message.cpp.o: CMakeFiles/selfkafka.dir/flags.make
 CMakeFiles/selfkafka.dir/src/Message.cpp.o: /Users/marat/selfKafka/src/Message.cpp
 CMakeFiles/selfkafka.dir/src/Message.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/selfkafka.dir/src/Message.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/selfkafka.dir/src/Message.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/Message.cpp.o -MF CMakeFiles/selfkafka.dir/src/Message.cpp.o.d -o CMakeFiles/selfkafka.dir/src/Message.cpp.o -c /Users/marat/selfKafka/src/Message.cpp
 
 CMakeFiles/selfkafka.dir/src/Message.cpp.i: cmake_force
@@ -114,10 +142,38 @@ CMakeFiles/selfkafka.dir/src/Message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/Message.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/Message.cpp -o CMakeFiles/selfkafka.dir/src/Message.cpp.s
 
+CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o: CMakeFiles/selfkafka.dir/flags.make
+CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o: /Users/marat/selfKafka/src/MessageQueue.cpp
+CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o -MF CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o.d -o CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o -c /Users/marat/selfKafka/src/MessageQueue.cpp
+
+CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marat/selfKafka/src/MessageQueue.cpp > CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.i
+
+CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/MessageQueue.cpp -o CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.s
+
+CMakeFiles/selfkafka.dir/src/Metrics.cpp.o: CMakeFiles/selfkafka.dir/flags.make
+CMakeFiles/selfkafka.dir/src/Metrics.cpp.o: /Users/marat/selfKafka/src/Metrics.cpp
+CMakeFiles/selfkafka.dir/src/Metrics.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/selfkafka.dir/src/Metrics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/Metrics.cpp.o -MF CMakeFiles/selfkafka.dir/src/Metrics.cpp.o.d -o CMakeFiles/selfkafka.dir/src/Metrics.cpp.o -c /Users/marat/selfKafka/src/Metrics.cpp
+
+CMakeFiles/selfkafka.dir/src/Metrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/selfkafka.dir/src/Metrics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marat/selfKafka/src/Metrics.cpp > CMakeFiles/selfkafka.dir/src/Metrics.cpp.i
+
+CMakeFiles/selfkafka.dir/src/Metrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/Metrics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/Metrics.cpp -o CMakeFiles/selfkafka.dir/src/Metrics.cpp.s
+
 CMakeFiles/selfkafka.dir/src/Partition.cpp.o: CMakeFiles/selfkafka.dir/flags.make
 CMakeFiles/selfkafka.dir/src/Partition.cpp.o: /Users/marat/selfKafka/src/Partition.cpp
 CMakeFiles/selfkafka.dir/src/Partition.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/selfkafka.dir/src/Partition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/selfkafka.dir/src/Partition.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/Partition.cpp.o -MF CMakeFiles/selfkafka.dir/src/Partition.cpp.o.d -o CMakeFiles/selfkafka.dir/src/Partition.cpp.o -c /Users/marat/selfKafka/src/Partition.cpp
 
 CMakeFiles/selfkafka.dir/src/Partition.cpp.i: cmake_force
@@ -131,7 +187,7 @@ CMakeFiles/selfkafka.dir/src/Partition.cpp.s: cmake_force
 CMakeFiles/selfkafka.dir/src/Producer.cpp.o: CMakeFiles/selfkafka.dir/flags.make
 CMakeFiles/selfkafka.dir/src/Producer.cpp.o: /Users/marat/selfKafka/src/Producer.cpp
 CMakeFiles/selfkafka.dir/src/Producer.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/selfkafka.dir/src/Producer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/selfkafka.dir/src/Producer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/Producer.cpp.o -MF CMakeFiles/selfkafka.dir/src/Producer.cpp.o.d -o CMakeFiles/selfkafka.dir/src/Producer.cpp.o -c /Users/marat/selfKafka/src/Producer.cpp
 
 CMakeFiles/selfkafka.dir/src/Producer.cpp.i: cmake_force
@@ -142,10 +198,38 @@ CMakeFiles/selfkafka.dir/src/Producer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/Producer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/Producer.cpp -o CMakeFiles/selfkafka.dir/src/Producer.cpp.s
 
+CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o: CMakeFiles/selfkafka.dir/flags.make
+CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o: /Users/marat/selfKafka/src/RetentionCleaner.cpp
+CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o -MF CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o.d -o CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o -c /Users/marat/selfKafka/src/RetentionCleaner.cpp
+
+CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marat/selfKafka/src/RetentionCleaner.cpp > CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.i
+
+CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/RetentionCleaner.cpp -o CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.s
+
+CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o: CMakeFiles/selfkafka.dir/flags.make
+CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o: /Users/marat/selfKafka/src/RetentionPolicy.cpp
+CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o -MF CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o.d -o CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o -c /Users/marat/selfKafka/src/RetentionPolicy.cpp
+
+CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marat/selfKafka/src/RetentionPolicy.cpp > CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.i
+
+CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marat/selfKafka/src/RetentionPolicy.cpp -o CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.s
+
 CMakeFiles/selfkafka.dir/src/Topic.cpp.o: CMakeFiles/selfkafka.dir/flags.make
 CMakeFiles/selfkafka.dir/src/Topic.cpp.o: /Users/marat/selfKafka/src/Topic.cpp
 CMakeFiles/selfkafka.dir/src/Topic.cpp.o: CMakeFiles/selfkafka.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/selfkafka.dir/src/Topic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/selfkafka.dir/src/Topic.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/selfkafka.dir/src/Topic.cpp.o -MF CMakeFiles/selfkafka.dir/src/Topic.cpp.o.d -o CMakeFiles/selfkafka.dir/src/Topic.cpp.o -c /Users/marat/selfKafka/src/Topic.cpp
 
 CMakeFiles/selfkafka.dir/src/Topic.cpp.i: cmake_force
@@ -158,25 +242,37 @@ CMakeFiles/selfkafka.dir/src/Topic.cpp.s: cmake_force
 
 # Object files for target selfkafka
 selfkafka_OBJECTS = \
+"CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o" \
 "CMakeFiles/selfkafka.dir/src/Broker.cpp.o" \
 "CMakeFiles/selfkafka.dir/src/Consumer.cpp.o" \
+"CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o" \
 "CMakeFiles/selfkafka.dir/src/Message.cpp.o" \
+"CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o" \
+"CMakeFiles/selfkafka.dir/src/Metrics.cpp.o" \
 "CMakeFiles/selfkafka.dir/src/Partition.cpp.o" \
 "CMakeFiles/selfkafka.dir/src/Producer.cpp.o" \
+"CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o" \
+"CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o" \
 "CMakeFiles/selfkafka.dir/src/Topic.cpp.o"
 
 # External object files for target selfkafka
 selfkafka_EXTERNAL_OBJECTS =
 
+libselfkafka.a: CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o
 libselfkafka.a: CMakeFiles/selfkafka.dir/src/Broker.cpp.o
 libselfkafka.a: CMakeFiles/selfkafka.dir/src/Consumer.cpp.o
+libselfkafka.a: CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o
 libselfkafka.a: CMakeFiles/selfkafka.dir/src/Message.cpp.o
+libselfkafka.a: CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o
+libselfkafka.a: CMakeFiles/selfkafka.dir/src/Metrics.cpp.o
 libselfkafka.a: CMakeFiles/selfkafka.dir/src/Partition.cpp.o
 libselfkafka.a: CMakeFiles/selfkafka.dir/src/Producer.cpp.o
+libselfkafka.a: CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o
+libselfkafka.a: CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o
 libselfkafka.a: CMakeFiles/selfkafka.dir/src/Topic.cpp.o
 libselfkafka.a: CMakeFiles/selfkafka.dir/build.make
 libselfkafka.a: CMakeFiles/selfkafka.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libselfkafka.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libselfkafka.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/selfkafka.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/selfkafka.dir/link.txt --verbose=$(VERBOSE)
 

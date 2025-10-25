@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/zlib/lib CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.o -o basic_usage  libselfkafka.a
+/usr/bin/c++  -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.o -o basic_usage  libselfkafka.a /usr/local/opt/libpq/lib/libpq.dylib

@@ -997,10 +997,15 @@ CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.o
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdarg.h
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h
  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdint.h
+ /Users/marat/selfKafka/include/AsyncWriter.h
  /Users/marat/selfKafka/include/Broker.h
  /Users/marat/selfKafka/include/Consumer.h
+ /Users/marat/selfKafka/include/ConsumerGroup.h
  /Users/marat/selfKafka/include/Message.h
+ /Users/marat/selfKafka/include/MessageQueue.h
  /Users/marat/selfKafka/include/Partition.h
  /Users/marat/selfKafka/include/Producer.h
  /Users/marat/selfKafka/include/Topic.h
+ /usr/local/opt/libpq/include/libpq-fe.h
+ /usr/local/opt/libpq/include/postgres_ext.h
 

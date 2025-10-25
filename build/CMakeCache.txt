@@ -14,6 +14,11 @@
 # EXTERNAL cache entries
 ########################
 
+//The default library type that is used when linking against 'bson::bson'
+// (either SHARED or STATIC, requires that the package was built
+// with the appropriate library type)
+BSON_DEFAULT_IMPORTED_LIBRARY_TYPE:STRING=STATIC
+
 //Build tests
 BUILD_TESTS:BOOL=OFF
 
@@ -52,7 +57,7 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=-L/usr/local/opt/zlib/lib
+CMAKE_EXE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
@@ -86,7 +91,7 @@ CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
 
 //Flags used by the linker during the creation of modules during
 // all build types.
-CMAKE_MODULE_LINKER_FLAGS:STRING=-L/usr/local/opt/zlib/lib
+CMAKE_MODULE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of modules during
 // DEBUG builds.
@@ -156,7 +161,7 @@ CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=-L/usr/local/opt/zlib/lib
+CMAKE_SHARED_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.
@@ -213,11 +218,55 @@ CMAKE_TAPI:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeD
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The default library type that is used when linking against 'mongoc::mongoc'
+// (either SHARED or STATIC, requires that the package was built
+// with the appropriate library type)
+MONGOC_DEFAULT_IMPORTED_LIBRARY_TYPE:STRING=STATIC
+
+//The Set the PostgreSQL_INCLUDE_DIR cmake cache entry to the top-level
+// directory containing the PostgreSQL include directories. E.g
+// /usr/local/include/PostgreSQL/8.4 or C:/Program Files/PostgreSQL/8.4/include
+PostgreSQL_INCLUDE_DIR:PATH=/usr/local/opt/libpq/include
+
+//The Set the PostgreSQL_LIBRARY_DIR cmake cache entry to the top-level
+// directory containing the PostgreSQL libraries.
+PostgreSQL_LIBRARY_DEBUG:FILEPATH=PostgreSQL_LIBRARY_DEBUG-NOTFOUND
+
+//The Set the PostgreSQL_LIBRARY_DIR cmake cache entry to the top-level
+// directory containing the PostgreSQL libraries.
+PostgreSQL_LIBRARY_RELEASE:FILEPATH=/usr/local/opt/libpq/lib/libpq.dylib
+
+//The Set the PostgreSQL_INCLUDE_DIR cmake cache entry to the top-level
+// directory containing the PostgreSQL include directories. E.g
+// /usr/local/include/PostgreSQL/8.4 or C:/Program Files/PostgreSQL/8.4/include
+PostgreSQL_TYPE_INCLUDE_DIR:PATH=/usr/local/opt/libpq/include/postgresql/server
+
+//Header include-directory for Cyrus libsasl2
+SASL2_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+
+//Library file for Cyrus libsasl2
+SASL2_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libsasl2.tbd
+
+//The directory containing a CMake configuration file for bson.
+bson_DIR:PATH=/usr/local/lib/cmake/bson-2.1.2
+
+//The directory containing a CMake configuration file for bsoncxx.
+bsoncxx_DIR:PATH=/usr/local/lib/cmake/bsoncxx-4.1.4
+
+//The directory containing a CMake configuration file for mongoc.
+mongoc_DIR:PATH=/usr/local/lib/cmake/mongoc-2.1.2
+
+//The directory containing a CMake configuration file for mongocxx.
+mongocxx_DIR:PATH=/usr/local/lib/cmake/mongocxx-4.1.4
+
 //Value Computed by CMake
 selfkafka_BINARY_DIR:STATIC=/Users/marat/selfKafka/build
 
 //Value Computed by CMake
 selfkafka_IS_TOP_LEVEL:STATIC=ON
+
+//Dependencies for the target
+selfkafka_LIB_DEPENDS:STATIC=general;/usr/local/opt/libpq/lib/libpq.dylib;
 
 //Value Computed by CMake
 selfkafka_SOURCE_DIR:STATIC=/Users/marat/selfKafka
@@ -227,6 +276,8 @@ selfkafka_SOURCE_DIR:STATIC=/Users/marat/selfKafka
 # INTERNAL cache entries
 ########################
 
+//STRINGS property for variable: BSON_DEFAULT_IMPORTED_LIBRARY_TYPE
+BSON_DEFAULT_IMPORTED_LIBRARY_TYPE-STRINGS:INTERNAL=SHARED;STATIC
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -287,6 +338,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/marat/selfKafka
@@ -356,4 +409,20 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PostgreSQL
+FIND_PACKAGE_MESSAGE_DETAILS_PostgreSQL:INTERNAL=[/usr/local/opt/libpq/lib/libpq.dylib][/usr/local/opt/libpq/include][ ][v18.0()]
+//Details about finding SASL2
+FIND_PACKAGE_MESSAGE_DETAILS_SASL2:INTERNAL=[2.1.26][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libsasl2.tbd][v2.1.26(2.0)]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//STRINGS property for variable: MONGOC_DEFAULT_IMPORTED_LIBRARY_TYPE
+MONGOC_DEFAULT_IMPORTED_LIBRARY_TYPE-STRINGS:INTERNAL=SHARED;STATIC
+//ADVANCED property for variable: PostgreSQL_INCLUDE_DIR
+PostgreSQL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PostgreSQL_LIBRARY_DEBUG
+PostgreSQL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PostgreSQL_LIBRARY_RELEASE
+PostgreSQL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PostgreSQL_TYPE_INCLUDE_DIR
+PostgreSQL_TYPE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 

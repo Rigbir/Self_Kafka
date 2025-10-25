@@ -142,6 +142,69 @@ basic_usage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_usage.dir/build.make CMakeFiles/basic_usage.dir/build
 .PHONY : basic_usage/fast
 
+#=============================================================================
+# Target rules for targets named async_demo
+
+# Build rule for target.
+async_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 async_demo
+.PHONY : async_demo
+
+# fast build rule for target.
+async_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async_demo.dir/build.make CMakeFiles/async_demo.dir/build
+.PHONY : async_demo/fast
+
+#=============================================================================
+# Target rules for targets named metrics_demo
+
+# Build rule for target.
+metrics_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 metrics_demo
+.PHONY : metrics_demo
+
+# fast build rule for target.
+metrics_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metrics_demo.dir/build.make CMakeFiles/metrics_demo.dir/build
+.PHONY : metrics_demo/fast
+
+#=============================================================================
+# Target rules for targets named retention_demo
+
+# Build rule for target.
+retention_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 retention_demo
+.PHONY : retention_demo
+
+# fast build rule for target.
+retention_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/retention_demo.dir/build.make CMakeFiles/retention_demo.dir/build
+.PHONY : retention_demo/fast
+
+examples/async_demo.o: examples/async_demo.cpp.o
+.PHONY : examples/async_demo.o
+
+# target to build an object file
+examples/async_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async_demo.dir/build.make CMakeFiles/async_demo.dir/examples/async_demo.cpp.o
+.PHONY : examples/async_demo.cpp.o
+
+examples/async_demo.i: examples/async_demo.cpp.i
+.PHONY : examples/async_demo.i
+
+# target to preprocess a source file
+examples/async_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async_demo.dir/build.make CMakeFiles/async_demo.dir/examples/async_demo.cpp.i
+.PHONY : examples/async_demo.cpp.i
+
+examples/async_demo.s: examples/async_demo.cpp.s
+.PHONY : examples/async_demo.s
+
+# target to generate assembly for a file
+examples/async_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async_demo.dir/build.make CMakeFiles/async_demo.dir/examples/async_demo.cpp.s
+.PHONY : examples/async_demo.cpp.s
+
 examples/basic_usage.o: examples/basic_usage.cpp.o
 .PHONY : examples/basic_usage.o
 
@@ -165,6 +228,78 @@ examples/basic_usage.s: examples/basic_usage.cpp.s
 examples/basic_usage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_usage.dir/build.make CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.s
 .PHONY : examples/basic_usage.cpp.s
+
+examples/metrics_demo.o: examples/metrics_demo.cpp.o
+.PHONY : examples/metrics_demo.o
+
+# target to build an object file
+examples/metrics_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metrics_demo.dir/build.make CMakeFiles/metrics_demo.dir/examples/metrics_demo.cpp.o
+.PHONY : examples/metrics_demo.cpp.o
+
+examples/metrics_demo.i: examples/metrics_demo.cpp.i
+.PHONY : examples/metrics_demo.i
+
+# target to preprocess a source file
+examples/metrics_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metrics_demo.dir/build.make CMakeFiles/metrics_demo.dir/examples/metrics_demo.cpp.i
+.PHONY : examples/metrics_demo.cpp.i
+
+examples/metrics_demo.s: examples/metrics_demo.cpp.s
+.PHONY : examples/metrics_demo.s
+
+# target to generate assembly for a file
+examples/metrics_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metrics_demo.dir/build.make CMakeFiles/metrics_demo.dir/examples/metrics_demo.cpp.s
+.PHONY : examples/metrics_demo.cpp.s
+
+examples/retention_demo.o: examples/retention_demo.cpp.o
+.PHONY : examples/retention_demo.o
+
+# target to build an object file
+examples/retention_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/retention_demo.dir/build.make CMakeFiles/retention_demo.dir/examples/retention_demo.cpp.o
+.PHONY : examples/retention_demo.cpp.o
+
+examples/retention_demo.i: examples/retention_demo.cpp.i
+.PHONY : examples/retention_demo.i
+
+# target to preprocess a source file
+examples/retention_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/retention_demo.dir/build.make CMakeFiles/retention_demo.dir/examples/retention_demo.cpp.i
+.PHONY : examples/retention_demo.cpp.i
+
+examples/retention_demo.s: examples/retention_demo.cpp.s
+.PHONY : examples/retention_demo.s
+
+# target to generate assembly for a file
+examples/retention_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/retention_demo.dir/build.make CMakeFiles/retention_demo.dir/examples/retention_demo.cpp.s
+.PHONY : examples/retention_demo.cpp.s
+
+src/AsyncWriter.o: src/AsyncWriter.cpp.o
+.PHONY : src/AsyncWriter.o
+
+# target to build an object file
+src/AsyncWriter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.o
+.PHONY : src/AsyncWriter.cpp.o
+
+src/AsyncWriter.i: src/AsyncWriter.cpp.i
+.PHONY : src/AsyncWriter.i
+
+# target to preprocess a source file
+src/AsyncWriter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.i
+.PHONY : src/AsyncWriter.cpp.i
+
+src/AsyncWriter.s: src/AsyncWriter.cpp.s
+.PHONY : src/AsyncWriter.s
+
+# target to generate assembly for a file
+src/AsyncWriter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/AsyncWriter.cpp.s
+.PHONY : src/AsyncWriter.cpp.s
 
 src/Broker.o: src/Broker.cpp.o
 .PHONY : src/Broker.o
@@ -214,6 +349,30 @@ src/Consumer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/Consumer.cpp.s
 .PHONY : src/Consumer.cpp.s
 
+src/ConsumerGroup.o: src/ConsumerGroup.cpp.o
+.PHONY : src/ConsumerGroup.o
+
+# target to build an object file
+src/ConsumerGroup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.o
+.PHONY : src/ConsumerGroup.cpp.o
+
+src/ConsumerGroup.i: src/ConsumerGroup.cpp.i
+.PHONY : src/ConsumerGroup.i
+
+# target to preprocess a source file
+src/ConsumerGroup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.i
+.PHONY : src/ConsumerGroup.cpp.i
+
+src/ConsumerGroup.s: src/ConsumerGroup.cpp.s
+.PHONY : src/ConsumerGroup.s
+
+# target to generate assembly for a file
+src/ConsumerGroup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/ConsumerGroup.cpp.s
+.PHONY : src/ConsumerGroup.cpp.s
+
 src/Message.o: src/Message.cpp.o
 .PHONY : src/Message.o
 
@@ -237,6 +396,54 @@ src/Message.s: src/Message.cpp.s
 src/Message.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/Message.cpp.s
 .PHONY : src/Message.cpp.s
+
+src/MessageQueue.o: src/MessageQueue.cpp.o
+.PHONY : src/MessageQueue.o
+
+# target to build an object file
+src/MessageQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.o
+.PHONY : src/MessageQueue.cpp.o
+
+src/MessageQueue.i: src/MessageQueue.cpp.i
+.PHONY : src/MessageQueue.i
+
+# target to preprocess a source file
+src/MessageQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.i
+.PHONY : src/MessageQueue.cpp.i
+
+src/MessageQueue.s: src/MessageQueue.cpp.s
+.PHONY : src/MessageQueue.s
+
+# target to generate assembly for a file
+src/MessageQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/MessageQueue.cpp.s
+.PHONY : src/MessageQueue.cpp.s
+
+src/Metrics.o: src/Metrics.cpp.o
+.PHONY : src/Metrics.o
+
+# target to build an object file
+src/Metrics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/Metrics.cpp.o
+.PHONY : src/Metrics.cpp.o
+
+src/Metrics.i: src/Metrics.cpp.i
+.PHONY : src/Metrics.i
+
+# target to preprocess a source file
+src/Metrics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/Metrics.cpp.i
+.PHONY : src/Metrics.cpp.i
+
+src/Metrics.s: src/Metrics.cpp.s
+.PHONY : src/Metrics.s
+
+# target to generate assembly for a file
+src/Metrics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/Metrics.cpp.s
+.PHONY : src/Metrics.cpp.s
 
 src/Partition.o: src/Partition.cpp.o
 .PHONY : src/Partition.o
@@ -286,6 +493,54 @@ src/Producer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/Producer.cpp.s
 .PHONY : src/Producer.cpp.s
 
+src/RetentionCleaner.o: src/RetentionCleaner.cpp.o
+.PHONY : src/RetentionCleaner.o
+
+# target to build an object file
+src/RetentionCleaner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.o
+.PHONY : src/RetentionCleaner.cpp.o
+
+src/RetentionCleaner.i: src/RetentionCleaner.cpp.i
+.PHONY : src/RetentionCleaner.i
+
+# target to preprocess a source file
+src/RetentionCleaner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.i
+.PHONY : src/RetentionCleaner.cpp.i
+
+src/RetentionCleaner.s: src/RetentionCleaner.cpp.s
+.PHONY : src/RetentionCleaner.s
+
+# target to generate assembly for a file
+src/RetentionCleaner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/RetentionCleaner.cpp.s
+.PHONY : src/RetentionCleaner.cpp.s
+
+src/RetentionPolicy.o: src/RetentionPolicy.cpp.o
+.PHONY : src/RetentionPolicy.o
+
+# target to build an object file
+src/RetentionPolicy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.o
+.PHONY : src/RetentionPolicy.cpp.o
+
+src/RetentionPolicy.i: src/RetentionPolicy.cpp.i
+.PHONY : src/RetentionPolicy.i
+
+# target to preprocess a source file
+src/RetentionPolicy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.i
+.PHONY : src/RetentionPolicy.cpp.i
+
+src/RetentionPolicy.s: src/RetentionPolicy.cpp.s
+.PHONY : src/RetentionPolicy.s
+
+# target to generate assembly for a file
+src/RetentionPolicy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/src/RetentionPolicy.cpp.s
+.PHONY : src/RetentionPolicy.cpp.s
+
 src/Topic.o: src/Topic.cpp.o
 .PHONY : src/Topic.o
 
@@ -318,26 +573,56 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... async_demo"
 	@echo "... basic_usage"
+	@echo "... metrics_demo"
+	@echo "... retention_demo"
 	@echo "... selfkafka"
+	@echo "... examples/async_demo.o"
+	@echo "... examples/async_demo.i"
+	@echo "... examples/async_demo.s"
 	@echo "... examples/basic_usage.o"
 	@echo "... examples/basic_usage.i"
 	@echo "... examples/basic_usage.s"
+	@echo "... examples/metrics_demo.o"
+	@echo "... examples/metrics_demo.i"
+	@echo "... examples/metrics_demo.s"
+	@echo "... examples/retention_demo.o"
+	@echo "... examples/retention_demo.i"
+	@echo "... examples/retention_demo.s"
+	@echo "... src/AsyncWriter.o"
+	@echo "... src/AsyncWriter.i"
+	@echo "... src/AsyncWriter.s"
 	@echo "... src/Broker.o"
 	@echo "... src/Broker.i"
 	@echo "... src/Broker.s"
 	@echo "... src/Consumer.o"
 	@echo "... src/Consumer.i"
 	@echo "... src/Consumer.s"
+	@echo "... src/ConsumerGroup.o"
+	@echo "... src/ConsumerGroup.i"
+	@echo "... src/ConsumerGroup.s"
 	@echo "... src/Message.o"
 	@echo "... src/Message.i"
 	@echo "... src/Message.s"
+	@echo "... src/MessageQueue.o"
+	@echo "... src/MessageQueue.i"
+	@echo "... src/MessageQueue.s"
+	@echo "... src/Metrics.o"
+	@echo "... src/Metrics.i"
+	@echo "... src/Metrics.s"
 	@echo "... src/Partition.o"
 	@echo "... src/Partition.i"
 	@echo "... src/Partition.s"
 	@echo "... src/Producer.o"
 	@echo "... src/Producer.i"
 	@echo "... src/Producer.s"
+	@echo "... src/RetentionCleaner.o"
+	@echo "... src/RetentionCleaner.i"
+	@echo "... src/RetentionCleaner.s"
+	@echo "... src/RetentionPolicy.o"
+	@echo "... src/RetentionPolicy.i"
+	@echo "... src/RetentionPolicy.s"
 	@echo "... src/Topic.o"
 	@echo "... src/Topic.i"
 	@echo "... src/Topic.s"

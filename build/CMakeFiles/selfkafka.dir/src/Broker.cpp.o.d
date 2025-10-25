@@ -996,4 +996,9 @@ CMakeFiles/selfkafka.dir/src/Broker.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_callback.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_callback.h \
+  /Users/marat/selfKafka/include/AsyncWriter.h \
+  /Users/marat/selfKafka/include/MessageQueue.h \
+  /Users/marat/selfKafka/include/RetentionCleaner.h \
+  /Users/marat/selfKafka/include/RetentionPolicy.h \
+  /Users/marat/selfKafka/include/Metrics.h

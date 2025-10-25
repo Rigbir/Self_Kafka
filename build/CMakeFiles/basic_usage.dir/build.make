@@ -96,6 +96,7 @@ basic_usage_EXTERNAL_OBJECTS =
 basic_usage: CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.o
 basic_usage: CMakeFiles/basic_usage.dir/build.make
 basic_usage: libselfkafka.a
+basic_usage: /usr/local/opt/libpq/lib/libpq.dylib
 basic_usage: CMakeFiles/basic_usage.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable basic_usage"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/basic_usage.dir/link.txt --verbose=$(VERBOSE)

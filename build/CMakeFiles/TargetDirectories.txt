@@ -1,4 +1,7 @@
 /Users/marat/selfKafka/build/CMakeFiles/selfkafka.dir
 /Users/marat/selfKafka/build/CMakeFiles/basic_usage.dir
+/Users/marat/selfKafka/build/CMakeFiles/async_demo.dir
+/Users/marat/selfKafka/build/CMakeFiles/metrics_demo.dir
+/Users/marat/selfKafka/build/CMakeFiles/retention_demo.dir
 /Users/marat/selfKafka/build/CMakeFiles/edit_cache.dir
 /Users/marat/selfKafka/build/CMakeFiles/rebuild_cache.dir

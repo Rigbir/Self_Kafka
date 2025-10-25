@@ -65,11 +65,17 @@ CMAKE_BINARY_DIR = /Users/marat/selfKafka/build
 # The main recursive "all" target.
 all: CMakeFiles/selfkafka.dir/all
 all: CMakeFiles/basic_usage.dir/all
+all: CMakeFiles/async_demo.dir/all
+all: CMakeFiles/metrics_demo.dir/all
+all: CMakeFiles/retention_demo.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/selfkafka.dir/codegen
 codegen: CMakeFiles/basic_usage.dir/codegen
+codegen: CMakeFiles/async_demo.dir/codegen
+codegen: CMakeFiles/metrics_demo.dir/codegen
+codegen: CMakeFiles/retention_demo.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -79,6 +85,9 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/selfkafka.dir/clean
 clean: CMakeFiles/basic_usage.dir/clean
+clean: CMakeFiles/async_demo.dir/clean
+clean: CMakeFiles/metrics_demo.dir/clean
+clean: CMakeFiles/retention_demo.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,12 +97,12 @@ clean: CMakeFiles/basic_usage.dir/clean
 CMakeFiles/selfkafka.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=3,4,5,6,7,8,9 "Built target selfkafka"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target selfkafka"
 .PHONY : CMakeFiles/selfkafka.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/selfkafka.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/selfkafka.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 0
 .PHONY : CMakeFiles/selfkafka.dir/rule
@@ -105,7 +114,7 @@ selfkafka: CMakeFiles/selfkafka.dir/rule
 # codegen rule for target.
 CMakeFiles/selfkafka.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/selfkafka.dir/build.make CMakeFiles/selfkafka.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=3,4,5,6,7,8,9 "Finished codegen for target selfkafka"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21 "Finished codegen for target selfkafka"
 .PHONY : CMakeFiles/selfkafka.dir/codegen
 
 # clean rule for target.
@@ -120,12 +129,12 @@ CMakeFiles/selfkafka.dir/clean:
 CMakeFiles/basic_usage.dir/all: CMakeFiles/selfkafka.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_usage.dir/build.make CMakeFiles/basic_usage.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_usage.dir/build.make CMakeFiles/basic_usage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=1,2 "Built target basic_usage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=3,4 "Built target basic_usage"
 .PHONY : CMakeFiles/basic_usage.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/basic_usage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/basic_usage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 0
 .PHONY : CMakeFiles/basic_usage.dir/rule
@@ -137,13 +146,109 @@ basic_usage: CMakeFiles/basic_usage.dir/rule
 # codegen rule for target.
 CMakeFiles/basic_usage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_usage.dir/build.make CMakeFiles/basic_usage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=1,2 "Finished codegen for target basic_usage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=3,4 "Finished codegen for target basic_usage"
 .PHONY : CMakeFiles/basic_usage.dir/codegen
 
 # clean rule for target.
 CMakeFiles/basic_usage.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_usage.dir/build.make CMakeFiles/basic_usage.dir/clean
 .PHONY : CMakeFiles/basic_usage.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/async_demo.dir
+
+# All Build rule for target.
+CMakeFiles/async_demo.dir/all: CMakeFiles/selfkafka.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async_demo.dir/build.make CMakeFiles/async_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async_demo.dir/build.make CMakeFiles/async_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=1,2 "Built target async_demo"
+.PHONY : CMakeFiles/async_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/async_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/async_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 0
+.PHONY : CMakeFiles/async_demo.dir/rule
+
+# Convenience name for target.
+async_demo: CMakeFiles/async_demo.dir/rule
+.PHONY : async_demo
+
+# codegen rule for target.
+CMakeFiles/async_demo.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async_demo.dir/build.make CMakeFiles/async_demo.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=1,2 "Finished codegen for target async_demo"
+.PHONY : CMakeFiles/async_demo.dir/codegen
+
+# clean rule for target.
+CMakeFiles/async_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async_demo.dir/build.make CMakeFiles/async_demo.dir/clean
+.PHONY : CMakeFiles/async_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/metrics_demo.dir
+
+# All Build rule for target.
+CMakeFiles/metrics_demo.dir/all: CMakeFiles/selfkafka.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metrics_demo.dir/build.make CMakeFiles/metrics_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metrics_demo.dir/build.make CMakeFiles/metrics_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=5,6 "Built target metrics_demo"
+.PHONY : CMakeFiles/metrics_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/metrics_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/metrics_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 0
+.PHONY : CMakeFiles/metrics_demo.dir/rule
+
+# Convenience name for target.
+metrics_demo: CMakeFiles/metrics_demo.dir/rule
+.PHONY : metrics_demo
+
+# codegen rule for target.
+CMakeFiles/metrics_demo.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metrics_demo.dir/build.make CMakeFiles/metrics_demo.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=5,6 "Finished codegen for target metrics_demo"
+.PHONY : CMakeFiles/metrics_demo.dir/codegen
+
+# clean rule for target.
+CMakeFiles/metrics_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/metrics_demo.dir/build.make CMakeFiles/metrics_demo.dir/clean
+.PHONY : CMakeFiles/metrics_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/retention_demo.dir
+
+# All Build rule for target.
+CMakeFiles/retention_demo.dir/all: CMakeFiles/selfkafka.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/retention_demo.dir/build.make CMakeFiles/retention_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/retention_demo.dir/build.make CMakeFiles/retention_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=7,8 "Built target retention_demo"
+.PHONY : CMakeFiles/retention_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/retention_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/retention_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marat/selfKafka/build/CMakeFiles 0
+.PHONY : CMakeFiles/retention_demo.dir/rule
+
+# Convenience name for target.
+retention_demo: CMakeFiles/retention_demo.dir/rule
+.PHONY : retention_demo
+
+# codegen rule for target.
+CMakeFiles/retention_demo.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/retention_demo.dir/build.make CMakeFiles/retention_demo.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/marat/selfKafka/build/CMakeFiles --progress-num=7,8 "Finished codegen for target retention_demo"
+.PHONY : CMakeFiles/retention_demo.dir/codegen
+
+# clean rule for target.
+CMakeFiles/retention_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/retention_demo.dir/build.make CMakeFiles/retention_demo.dir/clean
+.PHONY : CMakeFiles/retention_demo.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

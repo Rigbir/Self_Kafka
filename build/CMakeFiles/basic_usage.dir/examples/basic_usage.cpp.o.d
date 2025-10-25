@@ -998,5 +998,10 @@ CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_callback.h \
   /Users/marat/selfKafka/include/Topic.h \
   /Users/marat/selfKafka/include/Broker.h \
+  /Users/marat/selfKafka/include/AsyncWriter.h \
+  /Users/marat/selfKafka/include/MessageQueue.h \
   /Users/marat/selfKafka/include/Producer.h \
-  /Users/marat/selfKafka/include/Consumer.h
+  /Users/marat/selfKafka/include/Consumer.h \
+  /Users/marat/selfKafka/include/ConsumerGroup.h \
+  /usr/local/opt/libpq/include/libpq-fe.h \
+  /usr/local/opt/libpq/include/postgres_ext.h

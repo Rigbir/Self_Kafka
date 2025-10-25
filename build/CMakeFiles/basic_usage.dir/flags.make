@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/marat/selfKafka/include
+CXX_INCLUDES = -I/Users/marat/selfKafka/include -I/usr/local/opt/libpq/include
 
 CXX_FLAGSx86_64 = -std=c++20 -arch x86_64
 

@@ -996,15 +996,26 @@ CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.o: /Users/marat/selfKafka/ex
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdint.h \
+  /Users/marat/selfKafka/include/AsyncWriter.h \
   /Users/marat/selfKafka/include/Broker.h \
   /Users/marat/selfKafka/include/Consumer.h \
+  /Users/marat/selfKafka/include/ConsumerGroup.h \
   /Users/marat/selfKafka/include/Message.h \
+  /Users/marat/selfKafka/include/MessageQueue.h \
   /Users/marat/selfKafka/include/Partition.h \
   /Users/marat/selfKafka/include/Producer.h \
-  /Users/marat/selfKafka/include/Topic.h
+  /Users/marat/selfKafka/include/Topic.h \
+  /usr/local/opt/libpq/include/libpq-fe.h \
+  /usr/local/opt/libpq/include/postgres_ext.h
 
+
+/usr/local/opt/libpq/include/postgres_ext.h:
+
+/usr/local/opt/libpq/include/libpq-fe.h:
 
 /Users/marat/selfKafka/include/Producer.h:
+
+/Users/marat/selfKafka/include/MessageQueue.h:
 
 /Users/marat/selfKafka/include/Message.h:
 
@@ -1331,6 +1342,8 @@ CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.o: /Users/marat/selfKafka/ex
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros:
+
+/Users/marat/selfKafka/include/ConsumerGroup.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
 
@@ -2857,6 +2870,8 @@ CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.o: /Users/marat/selfKafka/ex
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_min.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/size.h:
+
+/Users/marat/selfKafka/include/AsyncWriter.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/for_each_n.h:
 
