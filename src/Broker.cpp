@@ -1,8 +1,20 @@
 #include "Broker.h"
+#include "AsyncWriter.h"
+#include "RetentionCleaner.h"
+#include "RetentionPolicy.h"
+#include "Metrics.h"
 
 // Constructor: Initializes broker with given ID
 Broker::Broker(std::string id):
-    id_(std::move(id)) {}
+    id_(std::move(id)),
+    asyncWriter_(std::make_unique<AsyncWriter>(*this)),
+    retentionCleaner_(std::make_unique<RetentionCleaner>()) {}
+
+// Destructor: Stops async writer and retention cleaner
+Broker::~Broker() {
+    stopAsyncWriter();
+    stopRetentionCleaner();
+}
 
 // Management: Creates a new topic with specified name and partition count
 void Broker::createTopic(const std::string topicName, size_t numPartitions) {
@@ -11,7 +23,7 @@ void Broker::createTopic(const std::string topicName, size_t numPartitions) {
     if (topics_.contains(topicName)) {
         throw std::runtime_error("Topic " + topicName + " already exists");
     }
-
+    
     topics_[topicName] = std::make_shared<Topic>(topicName, numPartitions);
 }
 
@@ -21,21 +33,34 @@ bool Broker::hasTopic(const std::string& topicName) const {
     return topics_.contains(topicName);
 }
 
-// Core: Appends a message to specified topic
+// Core: Appends a message to specified topic (async, non-blocking)
 void Broker::append(const std::string& topicName, const Message& message) {
-    std::lock_guard<std::mutex> lock(mutex_);
     checkTopicExists(topicName);
-
-    topics_[topicName]->append(message);
+    Metrics::getInstance().incrementMessagesSent();
+    asyncWriter_->enqueueMessage(topicName, message);
 }
 
-// Core: Creates and sends a message to specified topic
+// Core: Creates and sends a message to specified topic (async, non-blocking)
 void Broker::send(const std::string& topicName, const std::string& key, const std::string& value) {
+    checkTopicExists(topicName);
+    Message message(key, value);
+    Metrics::getInstance().incrementMessagesSent();
+    asyncWriter_->enqueueMessage(topicName, std::move(message));
+}
+
+// Internal: Synchronous append for use by AsyncWriter
+void Broker::appendSync(const std::string& topicName, const Message& message) {
+    auto start = std::chrono::high_resolution_clock::now();
+    
     std::lock_guard<std::mutex> lock(mutex_);
     checkTopicExists(topicName);
-
-    Message message(key, value);
     topics_[topicName]->append(message);
+    
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    
+    Metrics::getInstance().incrementMessagesProcessed();
+    Metrics::getInstance().recordProcessingTime(topicName, duration);
 }
 
 // Reader: Retrieves messages from specific topic and partition
@@ -117,4 +142,46 @@ std::vector<PartitionMetadata> Broker::getPartitionMetadata(const std::string& t
     }
     
     return partitionsMetadata;
+}
+
+// Async writer management: Starts the async writer
+void Broker::startAsyncWriter() {
+    asyncWriter_->start();
+}
+
+// Async writer management: Stops the async writer
+void Broker::stopAsyncWriter() {
+    asyncWriter_->stop();
+    asyncWriter_->join();
+}
+
+// Async writer management: Returns queue size for specific topic
+size_t Broker::getAsyncQueueSize(const std::string& topicName) const {
+    return asyncWriter_->getQueueSize(topicName);
+}
+
+// Async writer management: Returns total processed messages count
+size_t Broker::getTotalProcessedMessages() const {
+    return asyncWriter_->getTotalProcessedMessages();
+}
+
+// Retention management: Starts the retention cleaner
+void Broker::startRetentionCleaner() {
+    retentionCleaner_->start();
+}
+
+// Retention management: Stops the retention cleaner
+void Broker::stopRetentionCleaner() {
+    retentionCleaner_->stop();
+    retentionCleaner_->join();
+}
+
+// Retention management: Returns total cleaned messages count
+uint64_t Broker::getTotalCleanedMessages() const {
+    return retentionCleaner_->getTotalCleanedMessages();
+}
+
+// Retention management: Returns total cleaned bytes count
+uint64_t Broker::getTotalCleanedBytes() const {
+    return retentionCleaner_->getTotalCleanedBytes();
 }

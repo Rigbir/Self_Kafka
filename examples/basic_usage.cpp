@@ -10,6 +10,7 @@
 #include "Broker.h"
 #include "Producer.h"
 #include "Consumer.h"
+#include "ConsumerGroup.h"
 
 void demonstrateBasicUsage() {
     std::cout << "=== SelfKafka Basic Usage Demo ===" << '\n';
@@ -184,12 +185,64 @@ void demonstrateMetadataAPI() {
     }
 }
 
+void demonstrateConsumerGroups() {
+    std::cout << "\n=== Consumer Groups Demo ===" << '\n';
+    
+    // Create broker and topic
+    Broker broker("consumer-group-broker");
+    broker.createTopic("events", 3);  // 3 partitions
+    
+    // Create consumer group
+    ConsumerGroup group("my-group", broker, "events");
+    
+    // Create consumers
+    auto consumer1 = std::make_shared<Consumer>(broker, "events");
+    auto consumer2 = std::make_shared<Consumer>(broker, "events");
+    auto consumer3 = std::make_shared<Consumer>(broker, "events");
+    
+    // Add consumers to group
+    std::cout << "Adding consumers to group..." << '\n';
+    group.addConsumer(consumer1);
+    group.addConsumer(consumer2);
+    group.addConsumer(consumer3);
+    
+    std::cout << "Group has " << group.getConsumerCount() << " consumers" << '\n';
+    
+    // Start heartbeat monitoring
+    group.start();
+    
+    // Send some messages
+    Producer producer(broker);
+    for (int i = 0; i < 9; ++i) {
+        producer.send("events", "key" + std::to_string(i), "message" + std::to_string(i));
+    }
+    
+    std::cout << "Sent 9 messages to topic" << '\n';
+    
+    // Show partition assignments
+    std::cout << "Partition assignments:" << '\n';
+    auto activeConsumers = group.getActiveConsumers();
+    for (const auto& consumerId : activeConsumers) {
+        auto partitions = group.getAssignedPartitions(consumerId);
+        std::cout << "  " << consumerId << ": partitions ";
+        for (auto partition : partitions) {
+            std::cout << partition << " ";
+        }
+        std::cout << '\n';
+    }
+    
+    // Stop the group
+    group.stop();
+    std::cout << "Consumer group stopped" << '\n';
+}
+
 int main() {
     try {
         demonstrateBasicUsage();
         demonstrateMultiThreading();
         demonstratePartitionRouting();
         demonstrateMetadataAPI();
+        demonstrateConsumerGroups();
         
         std::cout << "\n=== Demo completed successfully! ===" << '\n';
         
